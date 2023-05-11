@@ -1,0 +1,505 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  scroll-behavior: smooth;
+  font-family: "Poppins", sans-serif;
+}
+
+:root {
+  --navbar-color: #c22536;
+  --text-color: rgb(0, 0, 0);
+  --main-color: #eae1e1;
+  --border-color: #9c7272;
+  --hover-color: #2200ff;
+  --white-color: #ffffff;
+  --text-navbar: #ffffff;
+}
+
+body {
+  background: var(--bg-color);
+  color: var(--text-color);
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 0.5rem 7%;
+  background: var(--navbar-color);
+  display: flex;
+  align-items: center;
+  z-index: 100;
+  transition: 0.5s;
+}
+
+.logo {
+  font-size: 4rem;
+  color: var(--text-navbar);
+  font-weight: 900;
+  cursor: pointer;
+  margin-right: auto;
+}
+
+.logo:hover {
+  color: var(--text-navbar);
+}
+
+.nav-right a {
+  font-size: 1.7rem;
+  color: var(--text-navbar);
+  margin-right: 3.5rem;
+  position: relative;
+  text-decoration: none;
+  transition: 0.2s ease-in-out;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.nav-right a:hover {
+  color: var(--text-color);
+  transform: scale(1);
+  font-size: 1.9rem;
+}
+
+.menu .row {
+  width: 90%;
+  position: fixed;
+  top: 125px;
+}
+
+.menu .col a {
+  color: var(--text-color);
+  text-decoration: none;
+  transition: 0.3s ease-in-out;
+  border: 1px solid transparent;
+  display: flex;
+  justify-content: center;
+  transition: 0.2s ease-in-out;
+}
+
+.menu .col a:hover {
+  color: var(--navbar-color);
+  text-decoration: underline;
+  font-size: 1.5rem;
+}
+
+.display {
+  width: 100%;
+  height: 400px;
+  width: 98%;
+  height: 450px;
+  margin: auto;
+  display: flex;
+  overflow-x: auto;
+}
+
+.display::-webkit-scrollbar {
+  display: none;
+}
+
+.nm-product {
+  font-weight: 900;
+}
+
+.product img {
+  width: 100%;
+  margin: auto;
+  transition: inherit;
+  transform: scale(1.09);
+}
+
+.product:hover img {
+  transform: scale(0.9);
+}
+
+.product:hover {
+  transform: scale(0.9);
+}
+
+.product a {
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+/*INDEX END*/
+
+/*MENU START*/
+
+.section-menu {
+  min-height: 100vh;
+  padding: 13rem 7% 2rem;
+}
+
+.judul {
+  font-weight: 900;
+}
+
+.content-border .col-7 {
+  height: 50px;
+}
+
+.content-border {
+  height: 430px;
+  width: 286px;
+  border: 2px solid var(--border-color);
+  border-radius: 10px;
+  box-shadow: 1px 1px 10px var(--navbar-color);
+}
+
+.content-border:hover {
+  box-shadow: 5px 5px 50px var(--navbar-color);
+}
+
+.content-border img {
+  width: 100%;
+  padding-top: 10px;
+  transition: inherit;
+  transform: scale(1.09);
+  border-radius: 500px;
+}
+
+.content-border:hover img {
+  transform: scale(1);
+}
+
+.deskripsi {
+  width: 282px;
+  height: 50px;
+  position: absolute;
+}
+
+.sub {
+  padding-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+.sub .sub-1 {
+  height: 50px;
+  border-radius: 30px;
+  background-color: var(--navbar-color);
+  box-shadow: 0.5px 0.5px 5px var(--text-color);
+  transition: 0.3s ease-in-out;
+}
+
+.sub .sub-1:hover {
+  background-color: rgb(116, 0, 0);
+  box-shadow: 1px 1px 20px var(--navbar-color);
+}
+
+/*MENU END*/
+
+/*LOGIN START*/
+
+.login {
+  border-radius: 30px;
+  background-color: var(--navbar-color);
+  box-shadow: 0.5px 0.5px 5px var(--text-color);
+  transition: 0.3s ease-in-out;
+  color: var(--white-color);
+}
+
+.login:hover {
+  background-color: white;
+  color: var(--navbar-color);
+  box-shadow: 1px 1px 20px var(--navbar-color);
+}
+
+/*LOGIN END*/
+
+/*SECTION-ORDER START*/
+
+.section-order {
+  min-height: 100vh;
+  padding: 13rem 7% 2rem;
+}
+
+.section-order-1 {
+  min-height: 100vh;
+  padding: 2rem 7% 2rem;
+}
+
+section .judul-menu {
+  width: 98%;
+  height: 60px;
+  margin: 0 auto;
+  align-items: center;
+  display: flex;
+  padding: 20px;
+  justify-content: space-between;
+  border-bottom: 3px solid #2a2626;
+}
+
+.judul-menu p span {
+  font-size: 40px;
+  margin: 0 5px;
+  cursor: pointer;
+  color: #2e2d2d;
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  line-height: 19px;
+  text-align: center;
+  border-radius: 3px;
+}
+
+.judul-menu h1 {
+  font-weight: 900;
+}
+
+.judul-menu p span:hover {
+  border: 1px var(--navbar-color) solid;
+  background-color: var(--navbar-color);
+  color: var(--white-color);
+}
+
+main {
+  width: 98%;
+  height: 450px;
+  margin: auto;
+  display: flex;
+  overflow-x: auto;
+}
+
+main::-webkit-scrollbar {
+  display: none;
+}
+
+.cart {
+  position: relative;
+}
+
+.cart:before {
+  position: absolute;
+  content: attr(data-count);
+  width: 25px;
+  height: 25px;
+  font-size: 12px;
+  line-height: 25px;
+  border-radius: 15px;
+  top: -15px;
+  text-align: center;
+  background: red;
+  color: white;
+  cursor: pointer;
+  opacity: 0;
+}
+
+.cart.on::before {
+  opacity: 1;
+}
+
+.item {
+  /*backgrounf*/
+  min-width: 23%;
+  height: 300px;
+  margin: 10px;
+  background: whitesmoke;
+  border-radius: 20px;
+  position: relative;
+  transition: 0.5s;
+  border: 1px solid gainsboro;
+  box-shadow: 1px 1px 20px var(--navbar-color);
+  padding-top: 30px;
+}
+
+.item:hover {
+  height: 430px;
+}
+
+.item:hover .dat {
+  padding: 10px;
+  height: 250px;
+}
+
+.item:hover img {
+  transform: scale(0.9);
+}
+
+.item img {
+  width: 90%;
+  margin: auto;
+  transition: inherit;
+  transform: scale(1.09);
+  display: flex;
+  justify-content: center;
+}
+
+.dat {
+  width: 100%;
+  height: 0;
+  background: #eee;
+  padding: 0;
+  position: absolute;
+  bottom: 1px;
+  left: 0;
+  transition: inherit;
+  border-radius: 0 0 20px 20px;
+  overflow: hidden;
+}
+
+.dat p {
+  margin: 10px auto;
+  font-size: 15px;
+}
+
+.dat strong {
+  display: inline-block;
+  width: 100%;
+}
+
+.dat p:first-child strong {
+  width: 75%;
+}
+
+button {
+  border: none;
+  outline: none;
+  padding: 5px 10px;
+  background: var(--navbar-color);
+  margin: 5px 10px 0 5px;
+  color: var(--text-color);
+  cursor: pointer;
+  width: auto;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: rgb(116, 0, 0);
+  box-shadow: 1px 1px 20px var(--navbar-color);
+}
+
+/*js file css*/
+
+.image-carior {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: inherit;
+  width: 100%;
+  height: 200px;
+  border-radius: inherit;
+  display: none;
+}
+
+.image-carior.active {
+  display: block;
+  z-index: 5;
+}
+
+.item:nth-child(1) .image-carior.active {
+  animation: first 0.5s ease-in;
+}
+
+.item:nth-child(2) .image-carior.active {
+  animation: second 0.5s ease-in;
+}
+
+.item:nth-child(3) .image-carior.active {
+  animation: third 0.5s ease-in;
+}
+
+.item:nth-child(4) .image-carior.active {
+  animation: four 0.5s ease-in;
+}
+
+@keyframes first {
+  to {
+    transform: scale(0.08);
+    top: -305px;
+    left: 925px;
+  }
+}
+
+@keyframes second {
+  to {
+    transform: scale(0.08);
+    top: -305px;
+    left: 605px;
+  }
+}
+
+@keyframes third {
+  to {
+    transform: scale(0.08);
+    top: -305px;
+    left: 277px;
+  }
+}
+
+@keyframes four {
+  to {
+    transform: scale(0.08);
+    top: -305px;
+    left: -45;
+  }
+}
+
+.cart-field {
+  width: 90%;
+  height: 700px;
+  background: white;
+  overflow-x: hidden;
+  overflow-y: auto;
+  padding: 20px;
+  position: absolute;
+  top: -700px;
+  left: 5%;
+  transition: 0.5s;
+  display: block;
+  justify-content: center;
+  align-items: center;
+}
+
+.cart-field.display {
+  top: 200px;
+}
+
+.cart-field .item,
+.cart-field .item:hover {
+  width: 96%;
+  height: 420px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 30px auto;
+}
+
+.cart-field .item img,
+.cart-field .item:hover img {
+  transform: scale(1);
+  width: 30%;
+}
+
+.cart-field .item .dat {
+  width: 60%;
+  position: relative;
+  height: 100%;
+  padding: 30px;
+  left: auto;
+  background: inherit;
+}
+
+.cart-field .dat strong,
+.cart-field .dat .price {
+  font-size: 30px;
+}
+
+.cart-field .dat p:first-child strong {
+  width: 85%;
+}
+
+.cart-field .dat p small {
+  font-size: 20px;
+}
+
+.cart-field .image-carior.active {
+  display: none;
+}
+
+/*SECTION END*/
